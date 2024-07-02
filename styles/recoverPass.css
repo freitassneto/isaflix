@@ -1,0 +1,108 @@
+body {
+  height: 100vh;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/background_Isaflix.svg");
+  position: absolute;
+  z-index: -1;
+  background-position: center;
+  object-fit: cover;
+  opacity: 0.1;
+}
+
+.login-header {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.login-header > img {
+  height: 35px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.container-form {
+  width: 60%;
+  max-width: 320px;
+  padding: 30px;
+  background-color: #d7d7d7e5;
+  border-radius: 10px;
+}
+
+.container-form > h3 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #030303;
+}
+
+.recover-form {
+  margin-top: 10px;
+  color: #6f6f6f;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  & p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  & .div-radio {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    font-weight: 600;
+  }
+}
+
+.input-email,
+.input-text {
+  margin-top: 14px;
+  border: none;
+  padding: 10px;
+  height: 30px;
+  border-radius: 10px;
+  width: 90%;
+}
+
+.input-email::placeholder {
+  color: #909090;
+}
+
+.recover-button {
+  margin-top: 14px;
+  background-color: #1790fa;
+  color: #f0f0f0;
+  height: 44px;
+  border-radius: 50px;
+  font-size: 16px;
+  width: 100%;
+}
+
+#email-input-container,
+#text-input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 1000px) {
+  .main-container {
+    margin-top: 50px;
+  }
+}
